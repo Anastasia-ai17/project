@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О нас</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+            color: #4a5568;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            color: #555;
+        }
+        .highlight {
+            background: #e3f2fd;
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 4px solid #2196f3;
+        }
+        nav a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px 16px;
+            background: #4a5568;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: #2d3748;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>О нас</h1>
+        <p>Мы — небольшая команда разработчиков, которая любит писать чистый и понятный код.</p>
+        <p>Наша цель — помогать студентам и новичкам освоить веб‑разработку шаг за шагом.</p>
+        <div class="highlight">
+            <p>Мы используем современные технологии: HTML, CSS, JavaScript, Django, DevOps‑инструменты и многое другое.</p>
+        </div>
+        <nav>
+            <a href="{% url 'index' %}">Главная</a>
+            <a href="{% url 'contact' %}">Контакты</a>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #2d2d2d;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+            color: #64b5f6;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+        }
+        .info {
+            margin-bottom: 24px;
+        }
+        .info dt {
+            font-weight: 600;
+            color: #fff;
+            margin-top: 12px;
+        }
+        .info dd {
+            margin-left: 16px;
+            color: #aaa;
+        }
+        nav a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px 16px;
+            background: #42a5f5;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: #1e88e5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Контакты</h1>
+        <p>Свяжитесь с нами любым удобным способом.</p>
+        <dl class="info">
+            <dt>Почта</dt>
+            <dd>pk@mtuci.ru.</dd>
+
+            <dt>Телефон</dt>
+            <dd>8 (495) 957-77-31</dd>
+
+            <dt>Адрес</dt>
+            <dd>ул. Авиамоторная, 8А, Москва, 111024</dd>
+        </dl>
+        <nav>
+            <a href="{% url 'index' %}">Главная</a>
+            <a href="{% url 'about' %}">О нас</a>
+        </nav>
+    </div>
+</body>
+</html>
